@@ -1,0 +1,443 @@
+/* section */
+
+section > h1 {
+  display: none;
+}
+.sec-items-slide>h2,
+.sec-banner>h2,
+.sec-subscribe>h2,
+.sec-review>h2 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  text-shadow: var(--txt-shadow);
+}
+
+/* section_section1(슬라이드) */
+/* body의 직계자식은 높이를 가져도 됨 */
+.sec-slide {
+  margin-top: 50px;
+  height: 45vh;
+  width: 100%;
+  position: relative;
+}
+
+.sec-slide_con {
+  height: 100%;
+  width: 100%;
+}
+
+.sec-slide_screen {
+  display: flex;
+  width: 301%;
+  height: 100%;
+}
+
+.sec-slide_screen>li {
+  flex: 1;
+  height: 100%;
+}
+
+.sec-slide_screen>li:nth-of-type(3)~li {
+  display: none;
+}
+
+.sec-slide_screen a {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid red; */
+  /* border: transparent; */
+  color: transparent;
+}
+
+/* 슬라이드 1_css */
+.sec-slide_screen>li:nth-of-type(1) {
+  width: 100%;
+  height: 100%;
+  background-color: #D8EBD3;
+  position: relative;
+}
+
+.sec-slide_screen>li:nth-of-type(1)>* {
+  position: absolute;
+}
+
+.sec-slide_screen>li:nth-of-type(1)>p {
+  top: 10%;
+  left: 15%;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-family: 'GmarketSansMedium';
+}
+
+.sec-slide_screen>li:nth-of-type(1)>p>strong {
+  display: block;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.sec-slide_screen>li:nth-of-type(1)>img {
+  display: block;
+  width: 40vw;
+  max-width: 300px;
+  min-width: 200px;
+  bottom: -1%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+/* 슬라이드 2_css */
+.sec-slide_screen>li:nth-of-type(2) {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.sec-slide_screen2_bg {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sec-slide_screen2_bg>img {
+  height: 100%;
+}
+
+.sec-slide_screen>li:nth-of-type(2)>* {
+  position: absolute;
+}
+
+.sec-slide_screen2_txt {
+  font-size: 2rem;
+  text-align: center;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sec-slide_screen2_txt strong {
+  color: var(--pointcolor-deep);
+}
+
+.sec-slide_screen2_txt span {
+  margin-top: 1rem;
+  display: block;
+  font-family: 'GmarketSansLight';
+  font-size: 1.25rem
+}
+
+.sec-slide_screen>li:nth-of-type(2) button {
+  font-family: 'GmarketSansMedium';
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  background-color: var(--pointcolor);
+  padding: 5px 20px;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  color: white;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.sec-slide_screen2_img {
+  bottom: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 15rem;
+  width: 15rem;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-slide_screen_img img {
+  width: 20rem;
+}
+
+/* 슬라이드 3_css */
+.sec-slide_screen>li:nth-of-type(3) {
+  border: 1px solid lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}
+
+/* 슬라이드_버튼(이전, 다음) */
+.sec-slide_prev,
+.sec-slide_next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border-style: none;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.sec-slide_prev {
+  left: 0;
+}
+
+.sec-slide_next {
+  right: 0;
+}
+
+/* section items slide */
+.sec-items-slide {
+  margin-top: 2rem;
+  background-color: var(--bg-color);
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.sec-items-slide>h2 {
+  margin-bottom: 1rem;
+}
+
+.sec-items-slide_hashtag {
+  margin-bottom: 2rem;
+}
+
+.sec-items-slide_hashtag>a {
+  font-family: 'GmarketSansLight';
+  color: white;
+  background-color: var(--pointcolor-deep);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  text-shadow: var(--txt-shadow);
+}
+
+.sec-items-slide_list {
+  /* border: 1px solid salmon; */
+  width: 150%;
+  height: calc(100% / 2);
+  display: flex;
+  animation: slidelist 7s linear infinite alternate;
+}
+
+.sec-items-slide .con {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid blue; */
+  /* overflow: hidden; */
+  padding-left: 0.5rem;
+}
+
+@keyframes slidelist {
+  0% {margin-left: 0}
+
+  100% {
+    margin-left: -45%;
+  }
+
+}
+
+
+.sec-items-slide_list_box {
+  width: 10rem;
+  height: 100%;
+  border: 1px solid #e1e1e1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 1rem;
+  position: relative;
+  margin-right : 0.5rem;
+  font-size: 0.75rem;
+}
+
+.sec-items-slide_list_box:hover {
+  transform: scale(1.2);
+  z-index: 10;
+}
+
+.sec-items-slide_list_box>a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+.sec-items-slide_list_img {
+  height: 50%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.sec-items-slide_list_img>img {
+  width: 150%
+}
+
+.sec-items-slide_list_img_chili {
+  padding-bottom: 0.5rem;
+}
+
+.sec-items-slide_list_img_chili>img {
+  width: 10%;
+}
+
+.sec-items-slide_list_name {
+  border-top: 1px solid #e1e1e1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+/* sec-banner */
+.sec-banner {
+  /* border: 1px solid salmon; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 8rem 0;
+}
+
+.sec-banner>p {
+  color: var(--fontcolor-light);
+  font-family: 'GmarketSansLight';
+  line-height: 1.25rem;
+  padding-bottom: 2rem;
+}
+
+.banner div:nth-of-type(1) {
+  margin: 0 0 4rem;
+}
+.banner div:nth-of-type(2) {
+  margin: 4rem 0 2rem;
+}
+.banner div:nth-of-type(3) {
+  margin: 0 0 4rem;
+}
+.banner div:nth-of-type(4) {
+  margin:2rem 0 0;
+}
+/* sec-subscribe */
+.sec-subscribe {
+  background-color: var(--bg-color);
+  padding: 7rem 0;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.sec-subscribe .con {
+  width: 300%;
+  display: flex;
+  animation: bannerslide 30s linear infinite alternate;
+}
+
+.sec-subscribe .sub-banner:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+.sec-subscribe .sub-banner {
+  margin: 2rem 0.25rem;
+  cursor: pointer;
+  transition: ease-in-out .3s;
+}
+
+@keyframes bannerslide {
+  0% {
+    margin-left: -150%;
+  }    
+  100% {
+    margin-left: 0;
+  }
+}
+
+/* sec-review */
+.sec-review {
+  width: 100%;
+  /* border: 1px solid greenyellow; */
+  text-align: center;
+  padding: 6rem 0;
+}
+
+.sec-review-list_con {
+  /* border: 1px solid salmon; */
+  width: 200%;
+}
+
+.sec-review-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 1rem 0;
+  animation: reviewslide 30s linear infinite alternate;
+}
+
+@keyframes reviewslide {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -50%;
+  }
+}
+
+.sec-review-list li {
+  /* border: 1px solid blue; */
+  width: 50%;
+  height: 100%;
+}
+
+.sec-review-list a img {
+  width: 140%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sec-review-list a {
+  /* border: 1px solid red; */
+  display: inline-block;
+  width: 80%;
+  padding-top: 80%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1rem;
+  box-shadow: var(--txt-shadow);
+}
+
+.sec-review-list p {
+  font-size: 0.7rem;
+  font-family: 'GmarketSansLight';
+  color: var(--fontcolor);
+  line-height: 0.75rem;
+  letter-spacing: -1.5px;
+}
+
+.btn_more {
+  margin-top: 2rem;
+  padding: 0.5rem 2rem;
+  font-family: 'GmarketSansMedium';
+  background-color: rgba(0, 0, 0, 0.2);
+  border-style: none;
+  border-radius: 1.5rem;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  box-shadow: var(--txt-shadow);
+  text-shadow: var(--txt-shadow);
+}
+
+/* footer */

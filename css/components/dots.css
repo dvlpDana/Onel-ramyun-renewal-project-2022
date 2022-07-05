@@ -1,0 +1,36 @@
+/* 슬라이드_dots */
+.dots {
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.dots span {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--fontcolor-lightest);
+  color: transparent;
+}
+
+.dots .on {
+  background-color: tomato;
+}
+
+.dot1 {
+  left: 0;
+}
+
+.dot2 {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dot3 {
+  right: 0;
+}

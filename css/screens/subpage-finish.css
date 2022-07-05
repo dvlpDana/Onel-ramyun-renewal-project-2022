@@ -1,0 +1,40 @@
+.sub-sec-finish {
+  /* border: 1px solid red; */
+  padding-top: 50px;
+}
+
+.sub-sec-finish h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem 0;
+}
+
+.sub-sec-finish p,
+.sub-sec-finish > strong {
+  display: block;
+  text-align: center;
+  /* border: 1px solid blue; */
+  width: 70%;
+  margin: auto;
+  font-family: 'GmarketSansLight';
+  padding-bottom: 1.5rem;
+}
+
+.sub-sec-finish strong {
+  color: var(--pointcolor-deep)
+}
+
+.sub-sec-finish > strong,
+.sub-sec-finish p:last-child {
+  font-size: 0.75rem;
+}
+
+.sec-finish_logo-img {
+  width: 60%;
+  margin: auto;
+  padding-bottom: 1.5rem;
+}
+
+.sec-finish_logo-img img {
+  width: 100%;
+}

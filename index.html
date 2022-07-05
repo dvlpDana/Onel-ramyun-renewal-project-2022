@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/common.js"></script>
+  <title>Oramyun_Mobile_Index</title>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="header_logo">
+        <a href="./index.html"><img src="./img/logo.svg" alt="logo" /></a>
+      </div>
+      <nav class="header_icon">
+        <a href="#"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+        <a href="#"><i class="fa-solid fa-bars fa-xl ham"></i></a>
+      </nav>
+      <nav class="header_sidebar close">
+        <i class="fa-solid fa-xmark closing_btn"></i>
+        <h1><img src="img/logo.svg" alt="nav"></h1>
+        <div class="header_sidebar_button">
+          <button>로그인</button>
+          <button>회원가입</button>
+        </div>
+        <ul class="header_sidebar_menu">
+          <li>
+            <a href="#">상품</a>
+
+            <ul class="header_sidebar_submenu">
+              <li><a href="#">컵라면</a></li>
+              <li><a href="#">봉지라면</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">구독/선물하기</a>
+
+            <ul class="header_sidebar_submenu">
+              <li><a href="#">구독하기</a></li>
+              <li><a href="#">선물하기</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">리뷰</a>
+
+          </li>
+          <li>
+            <a href="#">이벤트</a>
+
+            <ul class="header_sidebar_submenu">
+              <li><a href="#">진행중 이벤트</a></li>
+              <li><a href="#">종료된 이벤트</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- section slide -->
+    <section class="sec-slide">
+      <h1>sec-slide</h1>
+      <div class="sec-slide_con">
+        <ul class="sec-slide_screen">
+          <li>
+            <a href="#">클릭범위</a>
+            <p>
+              <strong>오늘의 라면</strong>
+              신규회원이면 누구나!<br>
+              오늘의 라면이 오천원 쏩니다.
+            </p>
+            <img src="./img/slide1_character.png" alt="character">
+          </li>
+          <li>
+            <a href="#">클릭범위</a>
+            <div class="sec-slide_screen2_bg">
+              <img src="./img/slide_bg.png" alt="background">
+            </div>
+            <p class="sec-slide_screen2_txt">
+              '이달의 라시피'로 <br>
+              <strong>담봉이</strong>님이 <br>
+              선정되었습니다.
+              <span>색다른 라면의 맛 즐겨보아요</span>
+            </p>
+            <div class="sec-slide_screen2_img">
+              <img src="./img/ormn_rivew_1.jpeg" alt="receipe">
+            </div>
+            <button>라시피 둘러보기</button>
+          </li>
+          <li>슬라이드3</li>
+        </ul>
+      </div>
+      <button class="sec-slide_prev">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="sec-slide_next">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+      <div class="dots">
+        <span class="dot1 on">1</span>
+        <span class="dot2">2</span>
+        <span class="dot3">3</span>
+        <span class="dot3">4</span>
+        <span class="dot3">5</span>
+      </div>
+    </section>
+    <!-- section items slide -->
+    <section class="sec-items-slide">
+      <h1>sec-items-slide</h1>
+      <h2>오늘의 인기 라면</h2>
+      <div class="sec-items-slide_hashtag">
+        <a href="#">#외국라면</a>
+        <a href="#">#새로운 라면</a>
+        <a href="#">#매운 라면</a>
+      </div>
+      <div class="con">
+        <ul class="sec-items-slide_list">
+          <li class="sec-items-slide_list_box">
+            <a href="#"></a>
+            <div class="sec-items-slide_list_img">
+              <img src="img/ormn_rmn_1.png" alt="ramyun">
+            </div>
+            <div class="sec-items-slide_list_img_chili">
+              <img src="img/chili.png" alt="chili1">
+              <img src="img/chili.png" alt="chili2">
+              <img src="img/chili.png" alt="chili3">
+            </div>
+            <span class="sec-items-slide_list_name">김치라면</span>
+          </li>
+          <li class="sec-items-slide_list_box">
+            <a href="#"></a>
+            <div class="sec-items-slide_list_img">
+              <img src="img/ormn_rmn_19.png" alt="ramyun">
+            </div>
+            <div class="sec-items-slide_list_img_chili">
+              <img src="img/chili.png" alt="chili1">
+            </div>
+            <span class="sec-items-slide_list_name">더 왕뚜껑</span>
+          </li>
+          <li class="sec-items-slide_list_box">
+            <a href="#"></a>
+            <div class="sec-items-slide_list_img">
+              <img src="img/ormn_rmn_18.png" alt="ramyun">
+            </div>
+            <div class="sec-items-slide_list_img_chili">
+              <img src="img/chili.png" alt="chili1">
+              <img src="img/chili.png" alt="chili2">
+            </div>
+            <span class="sec-items-slide_list_name">농심사리면</span>
+          </li>
+          <li class="sec-items-slide_list_box">
+            <a href="#"></a>
+            <div class="sec-items-slide_list_img">
+              <img src="img/ormn_rmn_17.png" alt="ramyun">
+            </div>
+            <div class="sec-items-slide_list_img_chili">
+              <img src="img/chili.png" alt="chili1">
+              <img src="img/chili.png" alt="chili2">
+              <img src="img/chili.png" alt="chili3">
+            </div>
+            <span class="sec-items-slide_list_name">나가사끼짬뽕</span>
+          </li>
+          <li class="sec-items-slide_list_box">
+            <a href="#"></a>
+            <div class="sec-items-slide_list_img">
+              <img src="img/ormn_rmn_20.png" alt="ramyun">
+            </div>
+            <div class="sec-items-slide_list_img_chili">
+              <img src="img/chili.png" alt="chili1">
+              <img src="img/chili.png" alt="chili2">
+              <img src="img/chili.png" alt="chili3">
+            </div>
+            <span class="sec-items-slide_list_name">치즈불닭볶음면</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- section banner -->
+    <section class="sec-banner">
+      <h1>sec-banner</h1>
+      <h2>이젠 라면도 <br>편하게 구독하세요</h2>
+      <p>한 묶음 사기엔 많고, 편의점에는<br>
+        원하는 라면이 없어 실망했던 여러분들을<br>
+        위해 오늘의 라면이 탄생했습니다.
+      </p>
+      <div class="banner">
+        <div class="banner_item">
+          <a href="#"></a>
+          <h3>
+            최대 60%할인<br>
+            평생 <strong>무료 배송</strong>
+          </h3>
+          <img src="img/banner_2.png" alt="">
+        </div>
+        <div class="banner_item">
+          <a href="#"></a>
+          <h3>
+            라면수량, 배송주기는<br>
+            내 마음대로
+          </h3>
+          <img src="img/banner_3.png" alt="">
+        </div>
+        <div class="banner_item">
+          <a href="#"></a>
+          <h3>
+            배송 받을 라면은<br>
+            언제든지 변경해요!
+          </h3>
+          <img src="img/banner_1.png" alt="">
+        </div>
+        <div class="banner_item">
+          <a href="#"></a>
+          <h3>
+            100여종의 인기라면<br>
+            모두 한번에
+          </h3>
+          <img src="img/banner_4.png" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- section subscribe -->
+    <section class="sec-subscribe">
+      <h1>sec-subscribe</h1>
+      <h2>구독패키지</h2>
+      <div class="con">
+        <div class="sub-banner">
+          <span class="sub-banner_tag new">NEW</span>
+          <h3 class="sub-banner_header">컵라면<br>자유 패키지</h3>
+          <p class="sub-banner_txt">물만 부으면 끝! 더 간편하게 즐겨요</p>
+          <div class="sub-banner_img">
+            <img src="img/ormn_pkg_1.png" alt="ramyun_package">
+          </div>
+          <span class="sub-banner_price">8,900원~</span>
+          <span class="sub-banner_detail">※mini 박스(5봉지)기준</span>
+        </div>
+        <div class="sub-banner">
+          <span class="sub-banner_tag vegi">VEGITARIAN</span>
+          <h3 class="sub-banner_header vegi_header">베지패키지</h3>
+          <p class="sub-banner_txt">채식으로 건강과 환경을 챙겨요!</p>
+          <div class="sub-banner_img">
+            <img src="img/ormn_pkg_1.png" alt="ramyun_package">
+          </div>
+          <span class="sub-banner_price">16,900원~</span>
+          <span class="sub-banner_detail">※single 박스(10봉지)기준</span>
+        </div>
+        <div class="sub-banner">
+          <span class="sub-banner_tag new">NEW</span>
+          <h3 class="sub-banner_header">컵라면<br>자유 패키지</h3>
+          <p class="sub-banner_txt">물만 부으면 끝! 더 간편하게 즐겨요</p>
+          <div class="sub-banner_img">
+            <img src="img/ormn_pkg_1.png" alt="ramyun_package">
+          </div>
+          <span class="sub-banner_price">8,900원~</span>
+          <span class="sub-banner_detail">※mini 박스(5봉지)기준</span>
+        </div>
+        <div class="sub-banner">
+          <span class="sub-banner_tag best">BEST</span>
+          <h3 class="sub-banner_header">봉지라면<br>자유 패키지</h3>
+          <p class="sub-banner_txt">내가 원하는 라면만 골라 담을 수 있어요!</p>
+          <div class="sub-banner_img">
+            <img src="img/ormn_pkg_1.png" alt="ramyun_package">
+          </div>
+          <span class="sub-banner_price">7,900원~</span>
+          <span class="sub-banner_detail">※mini 박스(5봉지)기준</span>
+        </div>
+        <div class="sub-banner">
+          <span class="sub-banner_tag new">NEW</span>
+          <h3 class="sub-banner_header">컵라면<br>자유 패키지</h3>
+          <p class="sub-banner_txt">물만 부으면 끝! 더 간편하게 즐겨요</p>
+          <div class="sub-banner_img">
+            <img src="img/ormn_pkg_1.png" alt="ramyun_package">
+          </div>
+          <span class="sub-banner_price">8,900원~</span>
+          <span class="sub-banner_detail">※mini 박스(5봉지)기준</span>
+        </div>
+      </div>
+      <a class="sub_button" href="subpage-package.html">구독하기</a>
+    </section>
+    <!-- section review -->
+    <section class="sec-review">
+      <h1>sec-review</h1>
+      <h2>리뷰</h2>
+      <div class="sec-review-list_con">
+        <ul class="sec-review-list">
+          <li>
+            <a href="#">
+              <img src="img/ormn_review_1.jpeg" alt="">
+            </a>
+            <p>일주일에 2~3번은 꼭 라면을 먹는데<br>
+              매일 다른 라면을 즐길 수 있어요.<br>
+              이**님, 영상 제작자 / 정기구독 7회차
+            </p>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/ormn_review_2.jpeg" alt="">
+            </a>
+            <p>안 먹어봤던 라면도 많아요.<br>
+              편의점보다 종류가 더 많네요!<br>
+              김**님, 대학생 / 정기구독 3회차
+            </p>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/ormn_review_3.jpeg" alt="">
+            </a>
+            <p>바빠서 라면 사러 갈 시간도 없는데<br>
+              알아서 떨어질 때쯤 배송오니 편해요.<br>
+              박**님, 개발자 / 정기구독 8회차
+            </p>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/ormn_review_4.jpeg" alt="">
+            </a>
+            <p>바빠서 라면 사러 갈 시간도 없는데<br>
+              알아서 떨어질 때쯤 배송오니 편해요.<br>
+              박**님, 개발자 / 정기구독 8회차
+            </p>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/ormn_review_5.jpeg" alt="">
+            </a>
+            <p>바빠서 라면 사러 갈 시간도 없는데<br>
+              알아서 떨어질 때쯤 배송오니 편해요.<br>
+              박**님, 개발자 / 정기구독 8회차
+            </p>
+          </li>
+        </ul>
+      </div>
+      <button class="btn_more">
+        <i class="fa-regular fa-plus"></i>
+        <span>더보기</span>
+      </button>
+
+    </section>
+    <footer class="footer">
+      <div class="footer_icon-set">
+        <a href="#"><img src="img/sns_icon1.png" alt="social"></a>
+        <a href="#"><img src="img/sns_icon2.png" alt="social"></a>
+        <a href="#"><img src="img/sns_icon3.png" alt="social"></a>
+        <a href="#"><img src="img/sns_icon4.png" alt="social"></a>
+      </div>
+      <div class="footer_btn">
+        <a href="#">FAQ</a>
+        <a href="#">고객지원</a>
+        <a href="#">제휴안내</a>
+      </div>
+      <div class="footer_btn">
+        <a href="#">이용약관</a>
+        <a href="#">파트너문의</a>
+        <a class="footer_btn_smaller" href="#">개인정보<br>처리방침</a>
+      </div>
+      <div class="footer_cs_info">
+        <strong>CS CENTER</strong>
+        <ul>
+          <li>
+            <span>문의전화</span>
+            <span>070-4351-3012</span>
+          </li>
+          <li>
+            <span>업무시간</span>
+            <span>평일 10:00~17:00(주말/공휴일 휴무)</span>
+          </li>
+          <li>
+            <span>문의메일</span>
+            <span>rrh@uxis.co.kr</span>
+          </li>
+          <li>
+            <span>팩스번호</span>
+            <span>051 - 780 - 8157</span>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script>
+    $(function () {
+      $('.ham').on('click', function () {
+        $('.header_sidebar.close').removeClass('close')
+      })
+
+      $('.closing_btn').on('click', function () {
+        $('.header_sidebar').addClass('close')
+      })
+    })
+  </script>
+</body>
+
+</html>

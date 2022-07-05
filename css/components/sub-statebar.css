@@ -1,0 +1,56 @@
+.sub-statebar {
+  margin-top: 2rem;
+  width: 100%;
+  height: 3rem;
+  /* border: 1px solid blue; */
+  font-size: 0.75rem;
+  color: var(--fontcolor-lightest);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.sub-statebar > span {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-statebar::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 1px;
+  background-color: var(--fontcolor-lightest);
+  top: 10%;
+}
+
+.sub-statebar_dot {
+  position: absolute;
+  display: flex;
+  /* border: 1px solid red; */
+  width: 75%;
+  top: 0;
+  justify-content: space-between;
+}
+
+.sub-statebar_dot span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--fontcolor-lightest);
+  color: transparent;
+}
+
+.sub-statebar_dot .on {
+  background-color: var(--pointcolor);
+}
+.sub-statebar .on {
+  color: var(--pointcolor);
+}

@@ -1,0 +1,165 @@
+.sub-sec-payment {
+  /* border: 1px solid red; */
+  position: relative;
+  padding-top: 50px;
+}
+
+/* 주문정보 */
+
+.sec-payment-order,
+.sec-payment-delivery,
+.sec-payment-discount,
+.sec-payment-final,
+.sec-payment-howto,
+.sec-payment-agree {
+  padding: 1rem;
+  font-family: 'GmarketSansLight';
+}
+
+.sub-sec-payment h2,
+.sec-payment-order p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-sec-payment h2 {
+  padding-top: 1rem;
+  font-family: 'GmarketSansMedium';
+}
+
+i {
+  color: var(--fontcolor-light);
+}
+
+.sec-payment-order span {
+  display: block;
+}
+
+.sec-payment-order>span {
+  padding-left: 0.75rem;
+  padding-bottom: 1rem;
+}
+
+.sec-payment-order>p {
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.sec-payment-order_list {
+  padding: 1rem 2.25rem;
+  background-color: #ececec;
+  font-size: 0.75rem;
+}
+
+.sec-payment-order_list span {
+  padding-bottom: 0.25rem;
+}
+/* 배송정보 */
+.sec-payment-delivery_info {
+  padding-left: 0.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sec-payment-delivery_info label {
+  padding: 0.5rem 0;
+}
+
+.sec-payment-delivery_info input {
+  border: none;
+  background-color: #ececec;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* 할인쿠폰 및 포인트 */
+.sec-payment-discount button {
+  color: white;
+  background-color: var(--pointcolor);
+  border-style: none;
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  width: 5rem;
+  cursor: pointer;
+}
+
+.sec-payment-discount h3 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.75rem;
+  padding-bottom: 1rem;
+}
+
+.sec-payment-discount h3 p span {
+  padding: 0 0.5rem;
+}
+
+.sec-payment-discount_point_input {
+  text-align: right;
+}
+
+.sec-payment-discount_point_input input {
+  width: 5rem;
+  background-color: #ececec;
+  border-style: none;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--fontcolor-lightest);
+}
+
+/* 최종 결제 금액 */
+.sec-payment-final p {
+  padding-left: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+}
+
+.sec-payment-final p span {
+  padding: 0.25rem 0;
+}
+
+/* 결제방법 선택 */
+
+.btn_pay {
+  display: block;
+  border: 1px solid #eaeaea;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.btn_pay span {
+  margin-left: 1.5rem;
+}
+
+/* 약관 동의하기 */
+.sec-payment-agree_btn {
+  padding-left: 0.75rem;
+  padding-bottom: 1rem;
+}
+.sec-payment-agree p {
+  background-color: #eaeaea;
+  margin-left: 1.5rem;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+}
+
+/* 구분선 */
+.sub-sec-payment h2{
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.sub-sec-payment h2::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #ececec;
+  left: 0;
+  top: 0;
+}
+

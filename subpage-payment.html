@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/common.js"></script>
+  <title>Oramyun_Mobile_Payment</title>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="header_logo">
+        <a href="./index.html"><img src="./img/logo.svg" alt="logo" /></a>
+      </div>
+      <nav class="header_icon">
+        <a href="#"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+        <a href="#"><i class="fa-solid fa-bars fa-xl ham"></i></a>
+      </nav>
+      <nav class="header_sidebar close">
+        <i class="fa-solid fa-xmark closing_btn"></i>
+        <h1><img src="img/logo.svg" alt="nav"></h1>
+        <div class="header_sidebar_button">
+          <button>로그인</button>
+          <button>회원가입</button>
+        </div>
+        <ul class="header_sidebar_menu">
+          <li>
+            <a href="#">상품</a>
+
+            <ul class="header_sidebar_submenu">
+              <li><a href="#">컵라면</a></li>
+              <li><a href="#">봉지라면</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">구독/선물하기</a>
+
+            <ul class="header_sidebar_submenu">
+              <li><a href="#">구독하기</a></li>
+              <li><a href="#">선물하기</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">리뷰</a>
+
+          </li>
+          <li>
+            <a href="#">이벤트</a>
+
+            <ul class="header_sidebar_submenu">
+              <li><a href="#">진행중 이벤트</a></li>
+              <li><a href="#">종료된 이벤트</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="sub-sec-payment">
+      <h1>sub-sec-payment</h1>
+      <div class="sub-statebar">
+        <div class="sub-statebar_dot">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span class="on">4</span>
+        </div>
+        <span>패키지 선택</span>
+        <span>배송주기<br>/수량선택</span>
+        <span>라면 선택</span>
+        <span class="on">결제하기</span>
+      </div>
+      <div class="sec-payment-order">
+        <h2>
+          <strong>주문상품</strong>
+          <i class="fa-solid fa-caret-up"></i>
+        </h2>
+        <span>자유구성 10개</span>
+        <p>
+          <span>꼬깐초 비빔면 외 9개 선택</span>
+          <i class="fa-solid fa-angle-up"></i>
+        </p>
+        <div class="sec-payment-order_list">
+          <span>꼬깐초 비빔면</span>
+          <span>꼬들김 비빔면</span>
+          <span>열무비빔면</span>
+          <span>된장 라면</span>
+          <span>4가지 치즈 불닭볶음면</span>
+          <span>간짬뽕</span>
+          <span>감자면</span>
+          <span>고추기름로스팅짜장라면</span>
+          <span>굴진짬뽕</span>
+          <span>김치라면</span>
+        </div>
+      </div>
+      <div class="sec-payment-delivery">
+        <h2>
+          <strong>배송정보</strong>
+          <i class="fa-solid fa-caret-up"></i>
+        </h2>
+        <div class="sec-payment-delivery_info">
+          <label for="receivedPerson">받는 사람</label>
+          <input type="text" name="received_person" id="receivedPerson" placeholder="받는 사람 이름을 써주세요">
+        </div>
+        <div class="sec-payment-delivery_info">
+          <label for="cellphoneNumber">휴대폰</label>
+          <input type="text" name="cellphone_number" id="cellphoneNumber" placeholder="휴대폰번호(-없이 숫자만 입력)">
+        </div>
+        <div class="sec-payment-delivery_info">
+          <label for="address">주소</label>
+          <input type="text" name="adress" id="address" placeholder="도로명, 건물명, 번지를 입력하세요">
+          <input type="text" name="adress_detail" id="address" placeholder="나머지 상세 주소를 입력하세요">
+        </div>
+        <div class="sec-payment-delivery_info">
+          <label for="deliveryRequire">배송 요청사항</label>
+          <input type="text" name="delivery_require" id="deliveryRequire" placeholder="요청사항 유형">
+        </div>
+        <div class="sec-payment-delivery_info">
+          <label for="deliveryRequireExtra">배송 기타 요청사항</label>
+          <input type="text" name="delivery_require-extra" id="deliveryRequireExtra"
+            placeholder="예) 경비실에 맡겨주세요, 문 앞에 놔둬주세요">
+        </div>
+      </div>
+      <div class="sec-payment-discount">
+        <h2>
+          <strong>할인쿠폰 및 포인트</strong>
+          <i class="fa-solid fa-caret-up"></i>
+        </h2>
+        <div class="sec-payment-discount_coupon">
+          <h3>
+            <strong>적용쿠폰</strong>
+            <button>쿠폰선택</button>
+          </h3>
+        </div>
+        <div class="sec-payment-discount_point">
+          <h3>
+            <strong>포인트할인</strong>
+            <p>
+              <span>보유포인트</span>
+              <span>3,500원</span>
+            </p>
+          </h3>
+          <div class="sec-payment-discount_point_input">
+            <input type="text" id="point">
+            <label for="point">원</label>
+            <button>적용</button>
+          </div>
+        </div>
+      </div>
+      <div class="sec-payment-final">
+        <h2>
+          <strong>최종결제금액</strong>
+          <span>8,800원</span>
+        </h2>
+        <p>
+          <span>상품금액</span>
+          <span>13,900원</span>
+        </p>
+        <p>
+          <span>쿠폰할인금액</span>
+          <span>-5,000원</span>
+        </p>
+        <p>
+          <span>포인트할인금액</span>
+          <span>-100원</span>
+        </p>
+      </div>
+      <div class="sec-payment-howto">
+        <h2>
+          <strong>결제방법 선택</strong>
+          <i class="fa-solid fa-caret-up"></i>
+        </h2>
+        <div>
+          <a class="btn_pay" href="#">
+            <img src="img/icon_card.png" alt="icon_card">
+            <span>신용 / 체크카드</span>
+          </a>
+          <a class="btn_pay" href="#">
+            <img src="img/icon_kpay.png" alt="icon_card">
+            <span>카카오페이</span>
+          </a>
+        </div>
+      </div>
+      <div class="sec-payment-agree">
+        <h2>약관 전체 동의하기</h2>
+        <div class="sec-payment-agree_btn">
+          <input type="radio" id="agreement">
+          <label for="agreement">모든 약관에 동의합니다.</label>
+        </div>
+        <p>
+          개인정보 제 3자 제공 동의, 결제 대행 서비스 이용약관 등 모든 약관에 동의합니다.
+        </p>
+      </div>
+      <a class="sub_button sub-prev_btn" href="subpage-ramyun.html">이전</a>
+      <a class="sub_button sub-next_btn" href="subpage-finish.html">결제하기</a>
+    </section>
+    <footer class="footer">
+      <div class="footer_icon-set">
+        <a href="#"><img src="img/sns_icon1.png" alt="social"></a>
+        <a href="#"><img src="img/sns_icon2.png" alt="social"></a>
+        <a href="#"><img src="img/sns_icon3.png" alt="social"></a>
+        <a href="#"><img src="img/sns_icon4.png" alt="social"></a>
+      </div>
+      <div class="footer_btn">
+        <a href="#">FAQ</a>
+        <a href="#">고객지원</a>
+        <a href="#">제휴안내</a>
+      </div>
+      <div class="footer_btn">
+        <a href="#">이용약관</a>
+        <a href="#">파트너문의</a>
+        <a class="footer_btn_smaller" href="#">개인정보<br>처리방침</a>
+      </div>
+      <div class="footer_cs_info">
+        <strong>CS CENTER</strong>
+        <ul>
+          <li>
+            <span>문의전화</span>
+            <span>070-4351-3012</span>
+          </li>
+          <li>
+            <span>업무시간</span>
+            <span>평일 10:00~17:00(주말/공휴일 휴무)</span>
+          </li>
+          <li>
+            <span>문의메일</span>
+            <span>rrh@uxis.co.kr</span>
+          </li>
+          <li>
+            <span>팩스번호</span>
+            <span>051 - 780 - 8157</span>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

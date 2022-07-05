@@ -1,0 +1,86 @@
+.sub-sec-package {
+  border: 1px solid transparent;
+  margin-top: 50px;
+  text-align: center;
+  position: relative;
+}
+
+/* .sub-package_btn,
+.sub-package,
+.sub-package_dots {
+  display: none;
+} */
+
+.sub-sec-package > h2 {
+  padding: 2rem 0 0.5rem;
+  font-size: 1.75rem;
+}
+
+.sub-sec-package > span {
+  font-family: 'GmarketSansLight';
+  font-size: 0.75rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* sub package */
+.sub-package {
+  margin: auto;
+  width: 70%;
+  padding-top: 100%;
+  position: relative;
+  /* border: 1px solid red; */
+}
+
+.sub-package_con {
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+/* sub package prev & next */
+.sub-banner_prev,
+.sub-banner_next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-style: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.sub-banner_prev:hover i,
+.sub-banner_next:hover i {
+  color: var(--pointcolor);
+}
+.sub-banner_prev {
+  left: calc(15% - 1.4rem);
+}
+.sub-banner_next {
+  right: calc(15% - 1.4rem);
+}
+
+.sub-banner_prev i,
+.sub-banner_next i {
+  background-color: white;
+  font-size: 2rem;
+  border-radius: 50%;
+  color: rgba(0,0,0,0.2);
+}
+
+/* sub package dots */
+.sub-package_dots {
+  bottom: -2.5rem;
+  /* border: 1px solid saddlebrown;   */
+}
+.sub-package_dots .dot4 {
+  left: 25%;
+  transform: translateX(-25%);
+}
+.sub-package_dots .dot5 {
+  left: 75%;
+  transform: translateX(-75%);
+}
+/* sub package button */
+.sub-package_btn{
+  margin: 3rem 0;
+  padding: 0.75rem;
+}

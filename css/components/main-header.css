@@ -1,0 +1,38 @@
+/* main-header header */
+.header {
+  position: fixed;
+  width: 100%;
+  max-width: 768px;
+  height: 50px;
+  z-index: 10;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  background-color: white;
+}
+
+.header > * {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.header_logo {
+  width: 150px;
+  padding-left: 1rem;
+  left: 0;
+}
+
+.header_icon {
+  color: rgba(0,0,0,0.4);
+  font-size: large;
+  right: 1em;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_icon > a:hover {
+  color: var(--pointcolor-deep);
+}

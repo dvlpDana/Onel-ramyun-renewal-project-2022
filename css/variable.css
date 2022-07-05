@@ -1,0 +1,13 @@
+:root {
+  --pointcolor: #ff7a47;
+  --pointcolor-deep:#f44502;
+  --pointcolor-week:#FFE0D4;
+  --pointcolor-green:#D1E9CB;
+  --fontcolor: #313131;
+  --fontcolor-light: #7d7d7d;
+  --fontcolor-lightest: #a1a1a1;
+  --bg-color: #f7f8fb;
+  --bg-color-2: #e1e1e1;
+  --txt-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  /* --horizontal-space: 25px; */
+}

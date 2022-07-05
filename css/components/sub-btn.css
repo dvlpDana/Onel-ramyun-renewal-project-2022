@@ -1,0 +1,30 @@
+.sub_button {
+  display: inline-block;
+  font-family: 'GmarketSansMedium';
+  text-shadow: var(--txt-shadow);
+  width: 80%;
+  background-color: var(--pointcolor);
+  color: white;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  box-shadow: var(--txt-shadow);
+  text-shadow: var(--txt-shadow);
+}
+
+/* 이전 및 다음 버튼 */
+.sub-prev_btn,
+.sub-next_btn{
+  width: 40%;
+  max-width: calc(768px / 2 - 2rem);
+  text-align: center;
+  position: fixed;
+  opacity: 0.9;
+  z-index: 10;
+  bottom: 6%;
+}
+.sub-prev_btn {
+  left : 7.5%;
+  background-color: var(--fontcolor-lightest);
+}
+.sub-next_btn {right: 7.5%;}

@@ -1,0 +1,283 @@
+/* 마진보다는 패딩탑으로 여백을 줄 것, 마진은 병합현상이 있기 때문에 사라질 수 있음. */
+
+.sub-sec-ramyun {
+  border: 1px solid transparent;
+  margin-top: 50px;
+  height: 100%;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.sub-sec-ramyun h2 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.sub-sec-ramyun h2 strong {
+  color: var(--pointcolor-deep);
+}
+
+/* 검색바 */
+.ramyun_search-bar {
+  border: 1px solid var(--fontcolor-lightest);
+  border-radius: 1rem;
+  text-align: left;
+  width: 70%;
+  margin: auto;
+  padding: 0.5rem;
+  color: var(--fontcolor-light)
+}
+
+#search-bar {
+  border: none;
+}
+
+/* 라면 해시태그 */
+.sub-ramyun_hashtag {
+  display: flex;
+  width: calc(150% + (0.5rem * 5));
+  margin-top: 2rem;
+}
+
+.sub-ramyun_hashtag a {
+  width: 30%;
+  text-align: center;
+  margin-right: 0.5rem;
+  background-color: var(--pointcolor-green);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 3px rgba(20, 225, 20, 0.2);
+}
+
+/* 라면 선택목록 리스트 */
+.sec-ramyun_list {
+  animation: none;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.sec-ramyun_list li {
+  margin-right: 0;
+  width: calc(100% / 2 - 3rem);
+  margin-bottom: 1rem;
+}
+
+.sec-ramyun_list li:hover {
+  transform: none;
+}
+
+.sec-ramyun_list li>a {
+  border: 1px solid blue;
+
+}
+
+/* 리스트 박스 */
+.sec-ramyun_list_box>i {
+  color: red;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.sec-ramyun_list_box>p {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+}
+
+.sec-ramyun_list_box p button {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  border-radius: 5px;
+  padding: 0.25rem 0.4rem;
+  border-style: none;
+  cursor: pointer;
+}
+
+.off {
+  display: none;
+}
+
+.heart {
+  background-color: white;
+}
+
+/* 라면 팝업 배너 */
+.popup_ramayn-intro {
+  display: none;
+  position: absolute;
+  width: 80%;
+  background-color: lightgray;
+  opacity: 0.9;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+  z-index: 20;
+  font-family: 'GmarketSansLight';
+}
+
+.ramyun-intro_img {
+  border: 1px solid transparent;
+  position: relative;
+}
+
+.ramyun-intro_img>strong {
+  font-family: 'GmarketSansMedium';
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.popup_btn {
+  position: absolute;
+  top: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  margin: auto;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border-style: none;
+  background-color: var(--fontcolor-light);
+  color: white;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+.popup_cooked-img {
+  width: 80%;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.popup_cooked-img>img {
+  width: 100%;
+}
+
+.popup_chili {
+  width: 100%;
+  display: block;
+  text-align: center;
+  position: relative;
+}
+
+.popup_chili img {
+  width: 6%;
+}
+
+.popup_hashtag {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  margin: 0;
+}
+
+.popup_hashtag a {
+  width: 40%;
+  margin: 1rem 0;
+}
+
+/* 팝업 배너_상품 정보 표 */
+.popup_intro-table {
+  padding: 1rem;
+  position: relative;
+}
+
+.popup_intro-table p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.popup_intro-table p i,
+.popup_ramyun-reivew p:nth-of-type(1) i {
+  color: var(--fontcolor-light)
+}
+
+.popup_intro-table ul {
+  background-color: white;
+  font-size: 0.75rem;
+}
+
+.popup_intro-table>ul li {
+  border: 1px solid #e1e1e1;
+}
+
+.popup_intro-table>ul li * {
+  display: inline-block;
+  padding: 0.1rem 0.25rem;
+}
+
+.popup_intro-table>ul li span:first-child {
+  width: 80px;
+  background-color: #eaeaea;
+}
+
+.popup_ramyun-reivew {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid slateblue; */
+}
+
+.popup_ramyun-reivew > p {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.popup_star-icons i{
+  color: #FFAF26;
+  font-size: 0.75rem;
+}
+
+.popup_review-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.popup_review-img>figure {
+  display: block;
+  border-radius: 0.5rem;
+  width:calc(100% / 3 - 1rem);
+  padding-top: calc(100% / 3 - 1rem);
+  position: relative;
+  overflow: hidden;
+  margin: 0.5rem 0
+}
+
+.popup_review-img>figure img{
+  width: 140%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup_review-img>figure figcaption {
+  display: none;
+}
+
+/* 구분 선 */
+.popup_chili::after,
+.popup_hashtag::after,
+.popup_intro-table::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  left: 0;
+  bottom: 0;
+}
